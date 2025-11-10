@@ -1,0 +1,12 @@
+name: TechCo Setup
+type: module
+description: "Create content types, fields, taxonomy, image styles and pathauto patterns for TechCo."
+core_version_requirement: ^10
+package: TechCo
+dependencies:
+  - drupal:pathauto
+  - drupal:token
+  - drupal:media
+  - drupal:media_library
+  - drupal:field_group
+  - drupal:metatag

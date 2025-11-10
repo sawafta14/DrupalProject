@@ -1,0 +1,6 @@
+global:
+  css:
+    theme:
+      css/build/global.css: {}
+  dependencies:
+    - bootstrap_barrio/global-styling

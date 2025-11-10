@@ -1,0 +1,85 @@
+{% extends "@bootstrap_barrio/layout/page.html.twig" %}
+
+{# ====== الهيدر (النافبار) ====== #}
+{% block head %}
+  <nav{{ navbar_attributes.addClass('tc-navbar','navbar','navbar-expand-lg','navbar-light','bg-white','shadow-sm') }}>
+    {% if container_navbar %}<div class="container">{% endif %}
+      {{ page.header }}
+      {% if page.primary_menu or page.header_form %}
+        <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse" data-bs-target="#CollapsingNavbar"
+                aria-controls="CollapsingNavbar" aria-expanded="false"
+                aria-label="{{ 'Toggle navigation'|t }}">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="CollapsingNavbar">
+          {{ page.primary_menu }}
+          {% if page.header_form %}
+            <div class="ms-auto navbar-form">{{ page.header_form }}</div>
+          {% endif %}
+        </div>
+      {% endif %}
+    {% if container_navbar %}</div>{% endif %}
+  </nav>
+{% endblock %}
+
+
+{# ====== المحتوى الرئيسي (يشمل الهيرو + الصفحة) ====== #}
+{% block content %}
+  {# نربط مكتبة الـ Hero قبل تضمينه #}
+  {{ attach_library('techco_barrio/hero') }}
+
+  {# نضيف الـ Hero الثابت #}
+  {{ include(directory ~ '/templates/layout/hero.html.twig') }}
+
+  <div id="main" class="{{ container }}">
+    {{ page.breadcrumb }}
+
+    {# Hero region إن وُجدت في الـ Layout Builder #}
+    {% if page.hero %}
+      <section class="tc-hero">{{ page.hero }}</section>
+    {% endif %}
+
+    {# ====== محتوى الصفحة ====== #}
+    <div class="row row-offcanvas row-offcanvas-left clearfix">
+      <main{{ content_attributes }}>
+        <section class="section">
+          <a href="#main-content" id="main-content" tabindex="-1"></a>
+          {{ page.content }}
+        </section>
+      </main>
+
+      {% if page.sidebar_first %}
+        <div{{ sidebar_first_attributes }}>
+          <aside class="section" role="complementary">
+            {{ page.sidebar_first }}
+          </aside>
+        </div>
+      {% endif %}
+
+      {% if page.sidebar_second %}
+        <div{{ sidebar_second_attributes }}>
+          <aside class="section" role="complementary">
+            {{ page.sidebar_second }}
+          </aside>
+        </div>
+      {% endif %}
+    </div>
+  </div>
+
+    {# === Footer الجديد === #}
+  {{ attach_library('techco_barrio/footer') }}
+  {{ include(directory ~ '/templates/layout/footer.html.twig') }}
+
+  {# === Footer القديم (احتياطي) ===
+  {% if page.footer %}
+    <footer class="tc-footer bg-dark text-white py-5">
+      <div class="container">
+        {{ page.footer }}
+      </div>
+    </footer>
+  {% endif %}
+  #}
+
+
+{% endblock %}

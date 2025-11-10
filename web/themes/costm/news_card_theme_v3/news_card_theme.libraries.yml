@@ -1,0 +1,8 @@
+global-styling:
+  css:
+    theme:
+      css/style.css: {}
+hosting-plans:
+  css:
+    theme:
+      css/hosting-plans.css: {}

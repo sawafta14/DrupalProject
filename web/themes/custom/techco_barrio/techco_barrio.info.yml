@@ -1,0 +1,14 @@
+name: 'Techco Barrio'
+type: theme
+description: 'TechCo sub-theme based on Bootstrap Barrio.'
+core_version_requirement: ^10 || ^11
+base theme: bootstrap_barrio
+libraries:
+  - techco_barrio/global
+regions:
+  header: 'Header'
+  primary_menu: 'Primary menu'
+  secondary_menu: 'Secondary menu'
+  hero: 'Hero'
+  content: 'Content'
+  footer: 'Footer'

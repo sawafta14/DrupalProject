@@ -1,0 +1,15 @@
+<?php
+
+use Drupal\techco_setup\InstallHelper;
+use Drupal\taxonomy\Entity\Vocabulary;
+use Drupal\taxonomy\Entity\Term;
+use Drupal\pathauto\Entity\PathautoPattern;
+
+require_once __DIR__ . '/techco_setup.build.php';
+
+/**
+ * Implements hook_install().
+ */
+function techco_setup_install() {
+  techco_setup_build_all();
+}

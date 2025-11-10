@@ -1,0 +1,83 @@
+.tc-hero {
+  background: #5e9ce7;
+  color: #fff;
+  padding: 100px 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.tc-hero-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.tc-hero-content {
+  max-width: 550px;
+}
+
+.tc-hero-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 15px;
+}
+
+.tc-hero-subtitle {
+  font-size: 1.1rem;
+  color: #f1f1f1;
+  margin-bottom: 30px;
+}
+
+.tc-hero-buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.tc-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.tc-btn-primary {
+  background: #fff;
+  color: #333;
+}
+
+.tc-btn-primary:hover {
+  background: #e9e9e9;
+}
+
+.tc-btn-outline {
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+.tc-btn-outline:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.tc-hero-image img {
+  max-width: 380px;
+  opacity: 0.5;
+}
+
+@media (max-width: 768px) {
+  .tc-hero-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .tc-hero-image img {
+    margin-top: 40px;
+  }
+}
