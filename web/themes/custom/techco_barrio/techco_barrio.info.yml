@@ -3,12 +3,24 @@ type: theme
 description: 'TechCo sub-theme based on Bootstrap Barrio.'
 core_version_requirement: ^10 || ^11
 base theme: bootstrap_barrio
+
 libraries:
   - techco_barrio/global
+  - techco_barrio/header-footer
+  - core/drupal.layout_builder
+  - core/drupal.dialog
+  - core/drupal.dialog.off_canvas
+
 regions:
-  header: 'Header'
-  primary_menu: 'Primary menu'
-  secondary_menu: 'Secondary menu'
-  hero: 'Hero'
-  content: 'Content'
-  footer: 'Footer'
+  header: Header
+  primary_menu: Primary menu
+  secondary_menu: Secondary menu
+  highlighted: Highlighted
+  content: Content
+  sidebar_first: Sidebar first
+  sidebar_second: Sidebar second
+  footer_top: Footer Top
+  footer_first: Footer Column 1
+  footer_second: Footer Column 2
+  footer_third: Footer Column 3
+  footer_fifth: Footer Bottom

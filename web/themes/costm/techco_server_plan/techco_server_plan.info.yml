@@ -1,8 +1,0 @@
-name: 'TechCo Server Plan'
-type: theme
-description: 'Subtheme for Bootstrap Barrio: clean pricing cards with Most Popular badge.'
-core_version_requirement: '^10 || ^11'
-base theme: bootstrap_barrio
-package: 'TechCo'
-libraries:
-  - techco_server_plan/global-styling

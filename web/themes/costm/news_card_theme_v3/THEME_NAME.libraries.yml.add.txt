@@ -1,5 +1,0 @@
-# أضيفي هذا البلوك داخل ملف الثيم: THEME_NAME.libraries.yml
-hosting-plans:
-  css:
-    theme:
-      css/hosting-plans.css: {}

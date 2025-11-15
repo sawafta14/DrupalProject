@@ -1,9 +1,0 @@
-global-styling:
-  css:
-    theme:
-      css/pricing-cards.css: { }
-
-pricing-card:
-  css:
-    theme:
-      css/pricing-cards.css: { }

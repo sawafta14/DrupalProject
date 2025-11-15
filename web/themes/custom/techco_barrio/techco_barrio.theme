@@ -1,45 +1,25 @@
 <?php
 
-use Drupal\Core\Menu\MenuTreeParameters;
-
 /**
  * Implements hook_preprocess_page().
  */
-function techco_barrio_preprocess_page(&$variables) {
-  // Attach the footer library
+function techco_barrio_preprocess_page(array &$variables) {
+  // Attach only the footer styling (no programmatic footer content).
   $variables['#attached']['library'][] = 'techco_barrio/footer';
-
-  // Site name
-  $variables['site_name'] = \Drupal::config('system.site')->get('name');
-
-  // Social links
-  $variables['social_links'] = [
-    ['url' => 'https://facebook.com', 'title' => 'Facebook', 'icon_class' => 'fab fa-facebook-f'],
-    ['url' => 'https://twitter.com', 'title' => 'Twitter', 'icon_class' => 'fab fa-twitter'],
-    ['url' => 'https://linkedin.com', 'title' => 'LinkedIn', 'icon_class' => 'fab fa-linkedin-in'],
-  ];
-
-  // Menus
-  $menu_tree = \Drupal::menuTree();
-  $variables['footer_menus'] = [];
-  foreach (['quick_links' => 'footer-quick-links', 'resources' => 'footer-resources'] as $key => $menu_name) {
-    $params = new MenuTreeParameters();
-    $tree = $menu_tree->load($menu_name, $params);
-    $manipulators = [
-      ['callable' => 'menu.default_tree_manipulators:checkAccess'],
-      ['callable' => 'menu.default_tree_manipulators:generateIndexAndSort'],
-    ];
-    $tree = $menu_tree->transform($tree, $manipulators);
-    $render = $menu_tree->build($tree);
-    $variables['footer_menus'][$key] = \Drupal::service('renderer')->renderRoot($render);
-  }
-
-  // Webform block
-  $block_manager = \Drupal::service('plugin.manager.block');
-  $plugin_block = $block_manager->createInstance('webform_block', [
-    'webform_id' => 'footer_subscribe_form',
-  ]);
-  $render = $plugin_block->build();
-  $variables['newsletter_block_markup'] = \Drupal::service('renderer')->renderRoot($render);
 }
 
+/**
+ * Implements hook_page_attachments().
+ */
+function techco_barrio_page_attachments(array &$attachments) {
+  $route_name = \Drupal::routeMatch()->getRouteName();
+
+  // Load admin and layout builder assets when editing layouts.
+  if (str_contains($route_name, 'layout_builder')) {
+    $attachments['#attached']['library'][] = 'core/drupal.layout_builder';
+    $attachments['#attached']['library'][] = 'core/drupal.dialog';
+    $attachments['#attached']['library'][] = 'core/drupal.dialog.off_canvas';
+    $attachments['#attached']['library'][] = 'core/drupal.ajax';
+    $attachments['#attached']['library'][] = 'core/drupalSettings';
+  }
+}
