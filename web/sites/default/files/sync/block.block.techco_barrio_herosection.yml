@@ -1,0 +1,30 @@
+uuid: 5493cba6-04ab-4d11-bb81-0779ac86f98e
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:8f736651-dca7-4ef8-a4c8-54ee7196dd5a'
+  module:
+    - block_content
+    - system
+  theme:
+    - techco_barrio
+id: techco_barrio_herosection
+theme: techco_barrio
+region: header
+weight: 0
+provider: null
+plugin: 'block_content:8f736651-dca7-4ef8-a4c8-54ee7196dd5a'
+settings:
+  id: 'block_content:8f736651-dca7-4ef8-a4c8-54ee7196dd5a'
+  label: 'Hero Section'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /news

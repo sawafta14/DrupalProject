@@ -1,0 +1,8 @@
+uuid: 1ed8f947-48e0-4e24-88e0-8621461d0111
+langcode: en
+status: true
+dependencies: {  }
+id: about_techco
+label: 'About (TechCo)'
+revision: false
+description: null

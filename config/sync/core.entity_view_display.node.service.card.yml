@@ -1,0 +1,60 @@
+uuid: b2f07a0b-ac11-4b42-bc7e-f3b3ff6bc79c
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.card
+    - field.field.node.service.field_categories
+    - field.field.node.service.field_image
+    - field.field.node.service.field_is_published
+    - field.field.node.service.field_summary
+    - field.field.node.service.layout_builder__layout
+    - node.type.service
+  module:
+    - image
+    - layout_builder
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.service.card
+targetEntityType: node
+bundle: service
+mode: card
+content:
+  field_categories:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_summary:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+hidden:
+  field_is_published: true
+  layout_builder__layout: true

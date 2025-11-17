@@ -1,0 +1,21 @@
+uuid: 49d0df72-121c-48a6-9c12-f021e32701fb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_period
+    - node.type.server_plan
+  module:
+    - options
+id: node.server_plan.field_period
+field_name: field_period
+entity_type: node
+bundle: server_plan
+label: Period
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

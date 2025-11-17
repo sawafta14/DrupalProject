@@ -1,0 +1,32 @@
+uuid: 8492c36f-052b-4124-99bd-7b67cfc86003
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.show_on.field_active
+    - taxonomy.vocabulary.show_on
+  module:
+    - text
+id: taxonomy_term.show_on.default
+targetEntityType: taxonomy_term
+bundle: show_on
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_active:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

@@ -1,0 +1,25 @@
+uuid: 9122bf9d-ebe3-4377-a938-7942a6703ea2
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.footer
+  module:
+    - system
+  theme:
+    - techco_barrio
+id: techco_barrio_footer_2
+theme: techco_barrio
+region: footer_second
+weight: 0
+provider: null
+plugin: 'system_menu_block:footer'
+settings:
+  id: 'system_menu_block:footer'
+  label: 'Connect with us'
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

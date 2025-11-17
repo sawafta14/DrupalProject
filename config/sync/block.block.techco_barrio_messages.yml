@@ -1,0 +1,22 @@
+uuid: d2075386-3c91-4b6e-b334-7a4b7e205328
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - techco_barrio
+_core:
+  default_config_hash: VZDxR0xdW-n-VWQRlRQjsiN-dgDS3-1Es-s1vXLfgsI
+id: techco_barrio_messages
+theme: techco_barrio
+region: header
+weight: -6
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  label_display: '0'
+  provider: system
+visibility: {  }

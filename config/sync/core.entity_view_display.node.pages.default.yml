@@ -1,0 +1,92 @@
+uuid: 385f3598-2611-4097-80d5-777c71f6b7cc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.pages.body
+    - field.field.node.pages.field_hero_image0
+    - node.type.pages
+  module:
+    - layout_builder
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          580019eb-8f9f-41de-86a7-c4e42874436d:
+            uuid: 580019eb-8f9f-41de-86a7-c4e42874436d
+            region: content
+            configuration:
+              id: 'extra_field_block:node:pages:links'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 0
+            additional: {  }
+          bbefa511-37fa-4973-ad6f-16318a8c49eb:
+            uuid: bbefa511-37fa-4973-ad6f-16318a8c49eb
+            region: content
+            configuration:
+              id: 'field_block:node:pages:body'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          6aa4e25a-d008-4155-bd5c-f8e9e0f73d10:
+            uuid: 6aa4e25a-d008-4155-bd5c-f8e9e0f73d10
+            region: content
+            configuration:
+              id: 'field_block:node:pages:field_hero_image0'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_entity_view
+                label: above
+                settings:
+                  view_mode: media_library
+                  link: false
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+        third_party_settings: {  }
+id: node.pages.default
+targetEntityType: node
+bundle: pages
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_hero_image0:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: media_library
+      link: false
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

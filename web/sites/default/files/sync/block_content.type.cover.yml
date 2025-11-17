@@ -1,0 +1,8 @@
+uuid: 443abf66-9715-4499-89af-b61d668d4463
+langcode: en
+status: true
+dependencies: {  }
+id: cover
+label: Cover
+revision: false
+description: null

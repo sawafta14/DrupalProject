@@ -1,0 +1,23 @@
+uuid: 008f15db-c858-4796-be8c-06ce71ce0636
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.hero
+    - field.storage.block_content.field_secondary
+  module:
+    - link
+id: block_content.hero.field_secondary
+field_name: field_secondary
+entity_type: block_content
+bundle: hero
+label: secondary
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

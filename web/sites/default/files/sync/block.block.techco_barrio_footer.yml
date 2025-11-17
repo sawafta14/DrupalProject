@@ -1,0 +1,25 @@
+uuid: 83eee95c-d8cd-4de5-b963-2cb6ebf215a4
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.footer
+  module:
+    - system
+  theme:
+    - techco_barrio
+id: techco_barrio_footer
+theme: techco_barrio
+region: header
+weight: 0
+provider: null
+plugin: 'system_menu_block:footer'
+settings:
+  id: 'system_menu_block:footer'
+  label: Footer
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

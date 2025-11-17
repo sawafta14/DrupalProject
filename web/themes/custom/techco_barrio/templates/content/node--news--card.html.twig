@@ -1,0 +1,31 @@
+<div class="news-card">
+
+  {# IMAGE #}
+  {% if content.field_image %}
+    <div class="views-field views-field-field-image">
+      {{ content.field_image }}
+    </div>
+  {% endif %}
+
+  {# CATEGORY #}
+  {% if content.field_category %}
+    <div class="views-field views-field-field-category">
+      {{ content.field_category }}
+    </div>
+  {% endif %}
+
+  {# TITLE #}
+  {% if label %}
+    <div class="views-field views-field-title">
+      <a href="{{ url }}">{{ label }}</a>
+    </div>
+  {% endif %}
+
+  {# BODY #}
+  {% if content.body %}
+    <div class="views-field views-field-body">
+      {{ content.body }}
+    </div>
+  {% endif %}
+
+</div>

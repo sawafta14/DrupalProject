@@ -1,0 +1,201 @@
+uuid: 543d5088-a014-4557-9b4a-b4f4b1af7e80
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.server_plan.field_bandwidth
+    - field.field.node.server_plan.field_cpu
+    - field.field.node.server_plan.field_is_featured
+    - field.field.node.server_plan.field_period
+    - field.field.node.server_plan.field_price
+    - field.field.node.server_plan.field_ram
+    - field.field.node.server_plan.field_storage
+    - node.type.server_plan
+  module:
+    - field_group
+    - path
+third_party_settings:
+  field_group:
+    group_title0:
+      children:
+        - group_server_specs
+        - group_pricing_period
+        - group_bi_dc
+      label: Title
+      region: content
+      parent_name: ''
+      weight: 0
+      format_type: tabs
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        direction: horizontal
+        width_breakpoint: 640
+    group_pricing_period:
+      children:
+        - field_price
+        - field_period
+      label: 'Pricing & Period'
+      region: content
+      parent_name: group_title0
+      weight: 5
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        formatter: closed
+        description: ''
+        required_fields: true
+    group_server_specs:
+      children:
+        - field_bandwidth
+        - field_cpu
+        - field_ram
+        - field_storage
+        - field_is_featured
+      label: 'Server Specs'
+      region: content
+      parent_name: group_title0
+      weight: 4
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        formatter: closed
+        description: ''
+        required_fields: true
+        direction: vertical
+        width_breakpoint: 640
+    group_bi_dc:
+      children:
+        - title
+        - uid
+        - created
+      label: 'Bi]dc'
+      region: hidden
+      parent_name: group_title0
+      weight: 3
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        formatter: closed
+        description: ''
+        required_fields: true
+id: node.server_plan.default
+targetEntityType: node
+bundle: server_plan
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_bandwidth:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_cpu:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_is_featured:
+    type: boolean_checkbox
+    weight: 5
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_period:
+    type: options_select
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_price:
+    type: number
+    weight: 9
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_ram:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_storage:
+    type: string_textfield
+    weight: 4
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    weight: 2
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 5
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    weight: 3
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 4
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

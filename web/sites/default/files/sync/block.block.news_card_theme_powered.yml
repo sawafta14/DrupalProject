@@ -1,0 +1,22 @@
+uuid: 88936997-c583-40ec-9c74-01f26d729660
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - news_card_theme
+_core:
+  default_config_hash: eYL19CLDyinGTWYQfBD1DswWzglEotE_kHnHx3AxTXM
+id: news_card_theme_powered
+theme: news_card_theme
+region: footer_bottom
+weight: 0
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

@@ -1,0 +1,11 @@
+uuid: f3d821b6-88d8-4071-8ed6-26feab9319eb
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.hosting_card
+label: hosting_card
+description: ''
+targetEntityType: node
+cache: true

@@ -1,0 +1,24 @@
+uuid: 77e799da-9db4-4513-9456-8d31478d7b47
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.about_techco
+    - field.storage.block_content.body
+  module:
+    - text
+id: block_content.about_techco.body
+field_name: body
+entity_type: block_content
+bundle: about_techco
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+  allowed_formats: {  }
+field_type: text_with_summary

@@ -1,0 +1,20 @@
+uuid: 4c61080f-a3b6-401b-bc9a-7fead322556f
+langcode: en
+status: true
+dependencies:
+  theme:
+    - techco_barrio
+_core:
+  default_config_hash: MY-b6RFbUcofefyaeI8uMqaPh2bJOasn2y1bvGVF4dw
+id: techco_barrio_primary_admin_actions
+theme: techco_barrio
+region: content
+weight: -6
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

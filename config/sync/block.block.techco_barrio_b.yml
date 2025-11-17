@@ -1,0 +1,25 @@
+uuid: 6bb08409-2f39-425d-95ea-2a6b10bd48c0
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:11aaadfc-874c-47c1-81b2-99ecda98a151'
+  module:
+    - block_content
+  theme:
+    - techco_barrio
+id: techco_barrio_b
+theme: techco_barrio
+region: header
+weight: 0
+provider: null
+plugin: 'block_content:11aaadfc-874c-47c1-81b2-99ecda98a151'
+settings:
+  id: 'block_content:11aaadfc-874c-47c1-81b2-99ecda98a151'
+  label: b
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,34 @@
+<?php
+
+use Drupal\taxonomy\Entity\Term;
+
+function active_taxonomy_filter_get_active_terms() {
+  $terms = [];
+  $taxonomy_terms = \Drupal::entityTypeManager()
+    ->getStorage('taxonomy_term')
+    ->loadTree('show_on');
+
+  foreach ($taxonomy_terms as $term) {
+    $term_obj = Term::load($term->tid);
+    if (!$term_obj || !$term_obj->hasField('field_active')) {
+      continue;
+    }
+    $active_value = $term_obj->get('field_active')->value ?? 0;
+    if ($active_value == 1) {
+      $terms[] = $term->name;
+    }
+  }
+
+  return $terms;
+}
+
+function active_taxonomy_filter_theme() {
+  return [
+    'news_landing_page' => [
+      'variables' => [
+        'items' => [],
+      ],
+      'template' => 'news-landing-page',
+    ],
+  ];
+}

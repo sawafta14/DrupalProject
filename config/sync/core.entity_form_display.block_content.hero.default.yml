@@ -1,0 +1,72 @@
+uuid: e10c57e1-aa1e-4cf9-9e85-27b54ccba73e
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.hero
+    - field.field.block_content.hero.body
+    - field.field.block_content.hero.field_headline
+    - field.field.block_content.hero.field_primary
+    - field.field.block_content.hero.field_secondary
+    - field.field.block_content.hero.field_subtext
+    - field.field.block_content.hero.layout_builder__layout
+  module:
+    - link
+    - text
+id: block_content.hero.default
+targetEntityType: block_content
+bundle: hero
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 26
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  field_headline:
+    type: string_textfield
+    weight: 27
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_primary:
+    type: link_default
+    weight: 29
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_secondary:
+    type: link_default
+    weight: 30
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_subtext:
+    type: string_textarea
+    weight: 28
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  layout_builder__layout: true

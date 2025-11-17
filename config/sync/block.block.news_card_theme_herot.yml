@@ -1,0 +1,25 @@
+uuid: b1d2221c-6337-4f7f-8e2f-26e44a3a37b3
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:f4d271b9-e88c-4b50-bea1-d8c256aa33a5'
+  module:
+    - block_content
+  theme:
+    - news_card_theme
+id: news_card_theme_herot
+theme: news_card_theme
+region: hero
+weight: 0
+provider: null
+plugin: 'block_content:f4d271b9-e88c-4b50-bea1-d8c256aa33a5'
+settings:
+  id: 'block_content:f4d271b9-e88c-4b50-bea1-d8c256aa33a5'
+  label: HeroT
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

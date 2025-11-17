@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+     "sass": "sass --watch scss/style.scss css/style.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -12,6 +13,6 @@
   "devDependencies": {
     "@popperjs/core": "^2.11.8",
     "bootstrap": "^5.3.8",
-    "sass": "^1.93.3"
+    "sass": "^1.94.0"
   }
 }

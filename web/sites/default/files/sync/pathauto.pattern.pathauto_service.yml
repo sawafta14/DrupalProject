@@ -1,0 +1,21 @@
+uuid: 6f50208f-79df-4255-99b7-51ff8dad5ef2
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: pathauto_service
+label: Service
+type: 'canonical_entities:node'
+pattern: '/service/[node:title]'
+selection_criteria:
+  cb894ead-106e-4ebd-8576-eb1688b72c51:
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      entity: node
+    bundles:
+      service: service
+selection_logic: and
+weight: 0
+relationships: {  }

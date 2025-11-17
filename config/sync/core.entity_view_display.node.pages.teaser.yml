@@ -1,0 +1,34 @@
+uuid: b2f85f73-fe4c-4a5b-a623-8a85730cf0ad
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.pages.body
+    - field.field.node.pages.field_hero_image0
+    - field.field.node.pages.layout_builder__layout
+    - node.type.pages
+  module:
+    - text
+    - user
+id: node.pages.teaser
+targetEntityType: node
+bundle: pages
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_hero_image0: true
+  layout_builder__layout: true

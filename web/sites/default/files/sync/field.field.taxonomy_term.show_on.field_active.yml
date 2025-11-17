@@ -1,0 +1,21 @@
+uuid: fca1eb06-1421-4a8d-bd2e-02358ae1c2f0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_active
+    - taxonomy.vocabulary.show_on
+id: taxonomy_term.show_on.field_active
+field_name: field_active
+entity_type: taxonomy_term
+bundle: show_on
+label: Active
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

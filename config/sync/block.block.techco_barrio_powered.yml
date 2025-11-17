@@ -1,0 +1,22 @@
+uuid: 8d6374b4-52e9-4478-b754-ecd6ce2e2a1a
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - techco_barrio
+_core:
+  default_config_hash: uHGQeXpjudF5HkwGniQ_zzUngqcc3iAzzE7fdjWJiyA
+id: techco_barrio_powered
+theme: techco_barrio
+region: header
+weight: -7
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

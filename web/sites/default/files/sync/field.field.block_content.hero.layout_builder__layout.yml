@@ -1,0 +1,21 @@
+uuid: ef10db78-d410-4794-bb7d-62b1ea2c83f0
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.hero
+    - field.storage.block_content.layout_builder__layout
+  module:
+    - layout_builder
+id: block_content.hero.layout_builder__layout
+field_name: layout_builder__layout
+entity_type: block_content
+bundle: hero
+label: Layout
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: layout_section

@@ -1,0 +1,30 @@
+uuid: 0c2aa5e8-1eb7-4826-90f9-7b830f021d77
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:quick_links:7781960e-f83b-4a78-b9ac-001afcfbab7d'
+  module:
+    - block_content
+    - system
+  theme:
+    - techco_barrio
+id: techco_barrio_quicklinks
+theme: techco_barrio
+region: header
+weight: 0
+provider: null
+plugin: 'block_content:7781960e-f83b-4a78-b9ac-001afcfbab7d'
+settings:
+  id: 'block_content:7781960e-f83b-4a78-b9ac-001afcfbab7d'
+  label: 'Quick Links'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /News

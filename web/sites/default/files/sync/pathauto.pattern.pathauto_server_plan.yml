@@ -1,0 +1,21 @@
+uuid: 97b6a74e-2438-47a1-b171-489e6b5eacd4
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: pathauto_server_plan
+label: 'Server Plan'
+type: 'canonical_entities:node'
+pattern: '/server-plans/[node:title]'
+selection_criteria:
+  87bba4e2-ae52-4295-82ce-0af4f5b584dc:
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      entity: node
+    bundles:
+      server_plan: server_plan
+selection_logic: and
+weight: 0
+relationships: {  }

@@ -1,10 +1,245 @@
-// Import Bootstrap SCSS
-@import "../node_modules/bootstrap/scss/bootstrap";
 
-// Custom variables
 @import "variables";
 
-// Custom components
-@import "custom";
-@import "footer";
 
+@import "bootstrap/bootstrap";
+
+
+
+.techco-header {
+  background: #ffffff;
+  border-bottom: 1px solid lighten($secondary, 55%);
+}
+
+.techco-header .nav-link {
+  font-weight: 600;
+  padding: 0.6rem 1rem;
+  color: $secondary;
+  transition: 0.25s ease;
+}
+
+.techco-header .nav-link:hover {
+  color: $primary;
+}
+
+.techco-header .nav-link.active,
+.techco-header .nav-link.is-active {
+  color: $primary;
+  font-weight: 700;
+}
+
+.techco-header .navbar-brand img {
+  height: 30px;
+  margin-right: 8px;
+}
+
+.techco-header .navbar-toggler {
+  border: none;
+}
+
+.techco-header .navbar-toggler:focus {
+  box-shadow: none;
+}
+
+
+/* ===============================
+   FOOTER
+=============================== */
+
+.techco-footer {
+  background: lighten($secondary, 65%);
+  color: darken($secondary, 20%);
+  border-top: 1px solid lighten($secondary, 55%);
+}
+
+.techco-footer h2,
+.techco-footer h3,
+.techco-footer h4 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: $secondary;
+}
+
+.techco-footer a {
+  color: $primary;
+  transition: 0.25s ease;
+}
+
+.techco-footer a:hover {
+  color: darken($primary, 12%);
+  text-decoration: underline;
+}
+
+.techco-footer button,
+.techco-footer .form-actions input[type="submit"] {
+  background: $primary;
+  color: white;
+  border-radius: $border-radius;
+}
+
+.techco-footer button:hover,
+.techco-footer .form-actions input[type="submit"]:hover {
+  background: darken($primary, 10%);
+}
+
+.techco-footer input,
+.techco-footer textarea {
+  border: 1px solid lighten($secondary, 50%);
+  border-radius: $border-radius;
+}
+
+.techco-footer input:focus,
+.techco-footer textarea:focus {
+  border-color: $primary;
+  box-shadow: 0 0 0 2px rgba($primary, 0.25);
+}
+
+
+/* ===============================
+   HERO SECTION
+=============================== */
+
+.tc-hero-bg {
+  background: linear-gradient(
+    135deg,
+    lighten($secondary, 25%),
+    lighten($secondary, 10%)
+  );
+  padding: 110px 0;
+  text-align: center;
+  color: #ffffff;
+}
+
+.tc-hero-title {
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.tc-hero-subtitle {
+  font-size: 20px;
+  max-width: 750px;
+  margin: 0 auto 30px auto;
+  color: lighten($secondary, 40%);
+}
+
+.tc-hero-buttons .btn {
+  padding: 12px 28px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: $border-radius;
+}
+
+.tc-hero-buttons .btn-light {
+  color: $secondary;
+}
+
+.tc-hero-buttons .btn-outline-light:hover {
+  background: white;
+  color: $secondary !important;
+}
+
+
+/* ===============================
+   SERVICE CARDS
+=============================== */
+
+.service-card {
+  background: #ffffff;
+  border-radius: $border-radius;
+  border: 1px solid lighten($secondary, 55%);
+  padding: 28px 22px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  transition: 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.service-card .views-field-title a {
+  font-size: 22px;
+  font-weight: 700;
+  color: $secondary;
+  text-decoration: none;
+}
+
+.service-card .views-field-title a:hover {
+  color: $primary;
+}
+
+.service-card .views-field-field-categories a {
+  display: inline-block;
+  background: lighten($primary, 40%);
+  color: darken($primary, 20%);
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+}
+
+.service-card .views-field-field-summary p {
+  color: darken($secondary, 20%);
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+
+/* ===============================
+   NEWS CARDS
+=============================== */
+
+.news-card {
+  background: white;
+  border-radius: $border-radius;
+  border: 1px solid lighten($secondary, 55%);
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  transition: 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.news-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.news-card .views-field-title a {
+  font-size: 22px;
+  font-weight: 700;
+  color: $secondary;
+}
+
+.news-card .views-field-title a:hover {
+  color: $primary;
+}
+
+.news-card .views-field-field-category a {
+  background: lighten($primary, 40%);
+  color: darken($primary, 20%);
+  padding: 4px 12px;
+  border-radius: 20px;
+}
+
+.news-card .views-field-field-summary {
+  color: darken($secondary, 20%);
+  line-height: 1.7;
+}
+
+
+
+
+.news-card .views-field-field-image img,
+.service-card .views-field-field-image img {
+  width: 100%;
+  max-width: 250px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: $border-radius;
+}

@@ -132,7 +132,7 @@
 
 
 /* ===============================
-   HERO SECTION (NEW — LARGE, CLEAN, NO IMAGE)
+   HERO SECTION
 =============================== */
 
 .tc-hero-bg {
@@ -177,7 +177,7 @@
 
 
 /* ===============================
-   SERVICES (UPDATED & FIXED)
+   SERVICES
 =============================== */
 
 .services-wrapper {
@@ -253,16 +253,6 @@
   margin-bottom: 15px;
 }
 
-.service-card .views-field-field-image img {
-  width: 95% !important;
-  max-width: 240px;
-  height: auto;
-  border-radius: 12px;
-  object-fit: cover;
-  display: block;
-  margin: 0 auto;
-}
-
 .service-card .views-field-field-summary p {
   color: #555;
   font-size: 15px;
@@ -274,7 +264,7 @@
 
 
 /* ===============================
-   NEWS CARDS (UPDATED & FIXED)
+   NEWS CARDS
 =============================== */
 
 .news-card {
@@ -324,13 +314,6 @@
   background: #e0e7ff;
 }
 
-.news-card .views-field-field-image img {
-  width: 60%;
-  margin: 0 auto 15px auto;
-  border-radius: 12px;
-  display: block;
-}
-
 .news-card .views-field-field-summary {
   color: #444;
   font-size: 15px;
@@ -345,4 +328,29 @@
 
 .news-card a:hover {
   text-decoration: underline;
+}
+
+
+
+
+.news-card .views-field-field-image .field__item,
+.service-card .views-field-field-image .field__item {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  width: 100% !important;
+  padding: 0 !important;
+  margin: 0 auto !important;
+}
+
+
+.news-card .views-field-field-image img,
+.service-card .views-field-field-image img {
+  max-width: 250px !important;
+  width: 100% !important;
+  height: 180px !important;
+  object-fit: cover !important;
+  border-radius: 12px !important;
+  margin: 0 auto !important;
+  display: block !important;
 }

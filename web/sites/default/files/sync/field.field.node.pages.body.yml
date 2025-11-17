@@ -1,0 +1,24 @@
+uuid: 9e2b029d-5286-4b84-878c-c2ff1bd5f742
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.pages
+  module:
+    - text
+id: node.pages.body
+field_name: body
+entity_type: node
+bundle: pages
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+  allowed_formats: {  }
+field_type: text_with_summary

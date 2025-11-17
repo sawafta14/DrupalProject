@@ -1,0 +1,33 @@
+uuid: 70e28028-4bca-4d91-b9fc-2a735b057738
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.about_techco
+    - field.field.block_content.about_techco.body
+  module:
+    - text
+id: block_content.about_techco.default
+targetEntityType: block_content
+bundle: about_techco
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 26
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

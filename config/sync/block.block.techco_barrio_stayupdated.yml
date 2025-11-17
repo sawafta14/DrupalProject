@@ -1,0 +1,25 @@
+uuid: 80b8091b-5ab2-4866-b856-a1fd30bc5a14
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:db8458d7-7106-4abe-a63d-3cb7e58d3058'
+  module:
+    - block_content
+  theme:
+    - techco_barrio
+id: techco_barrio_stayupdated
+theme: techco_barrio
+region: footer_third
+weight: 0
+provider: null
+plugin: 'block_content:db8458d7-7106-4abe-a63d-3cb7e58d3058'
+settings:
+  id: 'block_content:db8458d7-7106-4abe-a63d-3cb7e58d3058'
+  label: 'Stay Updated'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

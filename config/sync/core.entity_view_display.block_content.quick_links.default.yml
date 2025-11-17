@@ -1,0 +1,22 @@
+uuid: 31fe9a2c-41b2-4242-99f6-c1b0c44fd4ca
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.quick_links
+    - field.field.block_content.quick_links.body
+  module:
+    - text
+id: block_content.quick_links.default
+targetEntityType: block_content
+bundle: quick_links
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

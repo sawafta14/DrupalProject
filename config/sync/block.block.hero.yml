@@ -1,0 +1,35 @@
+uuid: d9920a1e-f55d-442f-bc2d-db46801c7ae7
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:hero:41133ffb-7346-4419-b6b0-9f1a986f7ce3'
+  module:
+    - block_content
+    - node
+  theme:
+    - techco_barrio
+id: hero
+theme: techco_barrio
+region: header
+weight: 0
+provider: null
+plugin: 'block_content:41133ffb-7346-4419-b6b0-9f1a986f7ce3'
+settings:
+  id: 'block_content:41133ffb-7346-4419-b6b0-9f1a986f7ce3'
+  label: Hero
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      hero_slide: hero_slide
+      page: page
+      pages: pages

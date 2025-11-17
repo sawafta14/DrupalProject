@@ -1,0 +1,33 @@
+uuid: cb9361a8-6a67-4d61-9431-a7c473e5d0fc
+langcode: en
+status: false
+dependencies:
+  config:
+    - webform.webform.footer_subscribe_form
+  module:
+    - webform
+  theme:
+    - techco_barrio
+id: techco_barrio_webform
+theme: techco_barrio
+region: footer_third
+weight: 0
+provider: null
+plugin: webform_block
+settings:
+  id: webform_block
+  label: Webform
+  label_display: '0'
+  provider: webform
+  webform_id: footer_subscribe_form
+  default_data: ''
+  redirect: false
+  lazy: false
+visibility:
+  'entity_bundle:webform_submission':
+    id: 'entity_bundle:webform_submission'
+    negate: false
+    context_mapping:
+      webform_submission: '@webform.webform_submission_route_context:webform_submission'
+    bundles:
+      footer_subscribe_form: footer_subscribe_form

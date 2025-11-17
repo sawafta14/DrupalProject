@@ -1,0 +1,11 @@
+uuid: 24d9bd06-3f69-48cd-bac7-4fdd1c2b8896
+langcode: en
+status: true
+dependencies: {  }
+name: 'Server Plan'
+type: server_plan
+description: null
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: true

@@ -1,0 +1,20 @@
+uuid: faf640d6-ab83-4544-a2c1-b6b16ffd684e
+langcode: en
+status: true
+dependencies:
+  module:
+    - active_taxonomy_filter
+  theme:
+    - techco_barrio
+id: techco_barrio_copyrightblock
+theme: techco_barrio
+region: footer_fifth
+weight: 0
+provider: null
+plugin: copyright_block
+settings:
+  id: copyright_block
+  label: 'Copyright Block'
+  label_display: visible
+  provider: active_taxonomy_filter
+visibility: {  }

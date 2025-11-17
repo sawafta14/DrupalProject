@@ -1,0 +1,6 @@
+name: Active Taxonomy Filter
+type: module
+description: Provides filtering for active taxonomy terms.
+core_version_requirement: ^10
+package: Custom
+version: 1.0

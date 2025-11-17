@@ -1,0 +1,19 @@
+uuid: a75abd23-0a8e-4187-ac52-387b471d56d3
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.hero00
+    - field.storage.block_content.field_button_1_text
+id: block_content.hero00.field_button_1_text
+field_name: field_button_1_text
+entity_type: block_content
+bundle: hero00
+label: 'Button 1 Text'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

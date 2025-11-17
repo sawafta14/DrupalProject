@@ -1,0 +1,22 @@
+uuid: 9e1ead59-9d1d-4e02-ab4d-f903add0e95d
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - techco_barrio
+_core:
+  default_config_hash: GuQlH3j65O5SXgAliLjf1Ben7XBU6qxvW7xXUo6q0rk
+id: techco_barrio_content
+theme: techco_barrio
+region: content
+weight: -3
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

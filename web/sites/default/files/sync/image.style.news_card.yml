@@ -1,0 +1,15 @@
+uuid: 3bdb2856-555e-4a7f-a806-5c9f1417ab25
+langcode: en
+status: true
+dependencies: {  }
+name: news_card
+label: news_card
+effects:
+  143012a9-888a-4a38-9fd6-4e4dbb37b208:
+    uuid: 143012a9-888a-4a38-9fd6-4e4dbb37b208
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 600
+      height: 400
+      anchor: center-center

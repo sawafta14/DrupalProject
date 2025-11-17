@@ -1,0 +1,30 @@
+
+$primary: #4d97e3;
+$secondary: #3c7ac2;
+
+
+$gray-900: #0b1a32;
+$gray-700: #444;
+$gray-100: #f8f9fa;
+
+
+$body-bg: #ffffff;
+
+
+$font-family-sans-serif: 'Cairo', sans-serif;
+
+
+$border-radius: 12px;
+
+
+$spacer: 1rem;
+
+
+
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "dark": $gray-900,
+  "light": $gray-100,
+);
+

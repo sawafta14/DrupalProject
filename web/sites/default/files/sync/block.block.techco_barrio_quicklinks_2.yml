@@ -1,0 +1,25 @@
+uuid: 5d49cc59-0679-4a0e-8332-d6c5059b4796
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:quick_links:991395d2-946d-4ba8-b0f1-c3c60260c335'
+  module:
+    - block_content
+  theme:
+    - techco_barrio
+id: techco_barrio_quicklinks_2
+theme: techco_barrio
+region: footer_third
+weight: 0
+provider: null
+plugin: 'block_content:991395d2-946d-4ba8-b0f1-c3c60260c335'
+settings:
+  id: 'block_content:991395d2-946d-4ba8-b0f1-c3c60260c335'
+  label: 'Quick Links'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

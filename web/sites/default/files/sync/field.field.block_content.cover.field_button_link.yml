@@ -1,0 +1,23 @@
+uuid: f75ee437-5b80-43a0-b750-dbe89f255c3f
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.cover
+    - field.storage.block_content.field_button_link
+  module:
+    - link
+id: block_content.cover.field_button_link
+field_name: field_button_link
+entity_type: block_content
+bundle: cover
+label: 'Button link'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

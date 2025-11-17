@@ -1,0 +1,15 @@
+uuid: 126947f3-458c-4320-80e1-e424a046064b
+langcode: en
+status: true
+dependencies: {  }
+name: service_card_thumb
+label: service_card_thumb
+effects:
+  c5177a6d-70d9-4ac5-8e54-b34caf4533e8:
+    uuid: c5177a6d-70d9-4ac5-8e54-b34caf4533e8
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 150
+      height: 150
+      anchor: center-center

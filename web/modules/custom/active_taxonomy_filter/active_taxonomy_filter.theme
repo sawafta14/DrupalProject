@@ -1,0 +1,10 @@
+<?php
+
+function active_taxonomy_filter_theme($existing, $type, $theme, $paths) {
+  return [
+    'news_landing_page' => [
+      'variables' => ['items' => []],
+      'template' => 'news-landing-page',
+    ],
+  ];
+}

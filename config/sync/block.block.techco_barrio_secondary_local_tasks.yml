@@ -1,0 +1,22 @@
+uuid: cab94150-f3d9-4cba-9326-fa7800df9f17
+langcode: en
+status: true
+dependencies:
+  theme:
+    - techco_barrio
+_core:
+  default_config_hash: lpVq_Qyojss-EfQ_LgUPkPSbXcUD9ojyNZgmUZP4d7I
+id: techco_barrio_secondary_local_tasks
+theme: techco_barrio
+region: content
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Secondary tabs'
+  label_display: '0'
+  provider: core
+  primary: false
+  secondary: true
+visibility: {  }

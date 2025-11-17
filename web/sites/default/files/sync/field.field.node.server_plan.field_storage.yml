@@ -1,0 +1,19 @@
+uuid: daa8ad51-fd0b-4437-bde3-96762f8a935c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_storage
+    - node.type.server_plan
+id: node.server_plan.field_storage
+field_name: field_storage
+entity_type: node
+bundle: server_plan
+label: Storage
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

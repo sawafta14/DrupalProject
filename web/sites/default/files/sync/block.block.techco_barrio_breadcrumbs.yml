@@ -1,0 +1,22 @@
+uuid: a44df6b1-c923-4edf-95a2-8da5ce819cff
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - techco_barrio
+_core:
+  default_config_hash: xk8HAWIUZCzYFsUX2sNmTNDUxSoCdwrEI1tpTT5LW9s
+id: techco_barrio_breadcrumbs
+theme: techco_barrio
+region: header
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

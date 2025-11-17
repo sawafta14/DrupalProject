@@ -1,0 +1,21 @@
+uuid: af16796e-9e03-45d1-9d38-a679f1573c46
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: pathauto_page
+label: Page
+type: 'canonical_entities:node'
+pattern: '/page/[node:title]'
+selection_criteria:
+  a5d150e6-a816-440f-a6f1-f0dec52d6b31:
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      entity: node
+    bundles:
+      page: page
+selection_logic: and
+weight: 0
+relationships: {  }

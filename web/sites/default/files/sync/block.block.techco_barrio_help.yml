@@ -1,0 +1,22 @@
+uuid: 1ea0b479-3dd8-43b7-837b-00c09cf2a4d9
+langcode: en
+status: false
+dependencies:
+  module:
+    - help
+  theme:
+    - techco_barrio
+_core:
+  default_config_hash: b6CHwczHyuqKRuf-Oi4zY6q-9HCsLyWRGkk8-reVCfk
+id: techco_barrio_help
+theme: techco_barrio
+region: header
+weight: -2
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

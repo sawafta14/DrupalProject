@@ -1,0 +1,22 @@
+uuid: 550dd9da-3d01-4c21-b021-cef38b3c5679
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.about_techco
+    - field.field.block_content.about_techco.body
+  module:
+    - text
+id: block_content.about_techco.default
+targetEntityType: block_content
+bundle: about_techco
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

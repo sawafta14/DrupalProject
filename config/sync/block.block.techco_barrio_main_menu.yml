@@ -1,0 +1,27 @@
+uuid: 86079e1b-2d21-46d0-8d82-834c1352e1ca
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - techco_barrio
+_core:
+  default_config_hash: Vrn8CVbuNQkElxVQ1UJS57jzA7WHlZ_6EJMfWkspfr0
+id: techco_barrio_main_menu
+theme: techco_barrio
+region: primary_menu
+weight: -6
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 2
+  expand_all_items: true
+visibility: {  }

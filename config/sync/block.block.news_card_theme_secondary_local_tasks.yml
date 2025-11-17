@@ -1,0 +1,22 @@
+uuid: 70eae7be-f5c0-4e5d-b43f-963ec2570ff2
+langcode: en
+status: true
+dependencies:
+  theme:
+    - news_card_theme
+_core:
+  default_config_hash: ydSxdq7R66I8UMC460rOzlfzvlUL4VRbdwc6z9DWaUI
+id: news_card_theme_secondary_local_tasks
+theme: news_card_theme
+region: highlighted
+weight: -2
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Secondary tabs'
+  label_display: '0'
+  provider: core
+  primary: false
+  secondary: true
+visibility: {  }

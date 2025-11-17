@@ -1,0 +1,22 @@
+uuid: 6c9f988c-e144-414d-acb6-b504e95933e3
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.newsletter
+    - field.field.block_content.newsletter.body
+  module:
+    - text
+id: block_content.newsletter.default
+targetEntityType: block_content
+bundle: newsletter
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

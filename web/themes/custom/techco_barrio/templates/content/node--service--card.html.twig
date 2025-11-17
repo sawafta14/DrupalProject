@@ -1,0 +1,36 @@
+{# ===============================
+   SERVICE CARD TEMPLATE
+   node--service--card.html.twig
+=============================== #}
+
+<div class="service-card">
+
+  {# Image #}
+  {% if content.field_image %}
+    <div class="views-field views-field-field-image">
+      {{ content.field_image }}
+    </div>
+  {% endif %}
+
+  {# Title (Corrected) #}
+  {% if label %}
+    <div class="views-field views-field-title">
+      <a href="{{ url }}">{{ label }}</a>
+    </div>
+  {% endif %}
+
+  {# Categories #}
+  {% if content.field_categories %}
+    <div class="views-field views-field-field-categories">
+      {{ content.field_categories }}
+    </div>
+  {% endif %}
+
+  {# Summary #}
+  {% if content.field_summary %}
+    <div class="views-field views-field-field-summary">
+      {{ content.field_summary }}
+    </div>
+  {% endif %}
+
+</div>
